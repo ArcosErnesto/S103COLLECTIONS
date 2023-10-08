@@ -47,7 +47,7 @@ public class Main {
 		System.out.println("****ACIERTE LA CAPTITAL***\n");
 		System.out.println("Introduzca su nombre:");
 		userName = sc.nextLine();
-		System.out.println("\nBienvenido " + userName
+		System.out.println("\nHola " + userName
 				+ ", a continuación te preguntaremos la capital de 10 países. ¿Cuántas serás capaz de acertar?\n");
 
 		for (int i = 1; i <= 10; i++) {
