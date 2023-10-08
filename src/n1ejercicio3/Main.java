@@ -42,6 +42,8 @@ public class Main {
 			e.printStackTrace();
 		}
 
+		ArrayList<String> capitals = new ArrayList<String>(answers.values());
+
 		System.out.println("****ACIERTE LA CAPTITAL***\n");
 		System.out.println("Introduzca su nombre:");
 		userName = sc.nextLine();
@@ -49,7 +51,7 @@ public class Main {
 				+ ", a continuación te preguntaremos la capital de 10 países. ¿Cuántas serás capaz de acertar?\n");
 
 		for (int i = 1; i <= 10; i++) {
-			String randomCapital = getCapital(answers);
+			String randomCapital = getCapital(capitals);
 			String country = getCountry(answers, randomCapital);
 
 			System.out.println("Pregunta n.º " + (i) + ": ¿Cuál es la capital de " + country + "?");
@@ -87,8 +89,7 @@ public class Main {
 
 	}
 
-	public static String getCapital(HashMap<String, String> answers) {
-		ArrayList<String> capitals = new ArrayList<String>(answers.values());
+	public static String getCapital(ArrayList<String> capitals) {
 		Random random = new Random();
 		int randomIndex = random.nextInt(capitals.size());
 		String randomCaptital = capitals.get(randomIndex);
