@@ -21,6 +21,12 @@ public class Main {
 		arrayMonth.add(new Month("Noviembre"));
 		arrayMonth.add(new Month("Diciembre"));
 
+		System.out.println("***Lista sin agosto***");
+
+		for (Month month : arrayMonth) {
+			System.out.println(month.getName());
+		}
+
 		arrayMonth.add(7, new Month("Agosto"));
 
 		System.out.println("***Bucle for sobre ArrayList***");

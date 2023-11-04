@@ -17,9 +17,7 @@ public class Main {
 
 		System.out.println("***Print list***");
 
-		for (Integer integer : list) {
-			System.out.println(integer);
-		}
+		System.out.println(list);
 
 		List<Integer> reverseList = new ArrayList<Integer>();
 
@@ -33,9 +31,7 @@ public class Main {
 
 		System.out.println("***Print reverse list***");
 
-		for (Integer integer : reverseList) {
-			System.out.println(integer);
-		}
+		System.out.println(reverseList);
 
 	}
 
